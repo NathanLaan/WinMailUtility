@@ -5,7 +5,7 @@ using System.Windows.Forms;
 
 namespace WinMailUtility.App
 {
-    static class Main
+    static class App
     {
         /// <summary>
         /// The main entry point for the application.
@@ -15,7 +15,7 @@ namespace WinMailUtility.App
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainForm());
+            Application.Run(new AppForm());
         }
     }
 }

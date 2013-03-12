@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace WinMailUtility.App
 {
-    public partial class MainForm : Form
+    public partial class AppForm : Form
     {
-        public MainForm()
+        public AppForm()
         {
             InitializeComponent();
         }
