@@ -41,6 +41,7 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.emailMessageTextbox = new System.Windows.Forms.TextBox();
             this.emailMessageLabel = new System.Windows.Forms.Label();
+            this.sendMailButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // serverNameTextbox
@@ -143,7 +144,7 @@
             this.emailMessageTextbox.Location = new System.Drawing.Point(114, 143);
             this.emailMessageTextbox.Multiline = true;
             this.emailMessageTextbox.Name = "emailMessageTextbox";
-            this.emailMessageTextbox.Size = new System.Drawing.Size(346, 138);
+            this.emailMessageTextbox.Size = new System.Drawing.Size(346, 109);
             this.emailMessageTextbox.TabIndex = 10;
             // 
             // emailMessageLabel
@@ -155,11 +156,22 @@
             this.emailMessageLabel.TabIndex = 11;
             this.emailMessageLabel.Text = "Email Message";
             // 
+            // sendMailButton
+            // 
+            this.sendMailButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.sendMailButton.Location = new System.Drawing.Point(385, 258);
+            this.sendMailButton.Name = "sendMailButton";
+            this.sendMailButton.Size = new System.Drawing.Size(75, 23);
+            this.sendMailButton.TabIndex = 12;
+            this.sendMailButton.Text = "Send Email";
+            this.sendMailButton.UseVisualStyleBackColor = true;
+            // 
             // AppForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(472, 293);
+            this.Controls.Add(this.sendMailButton);
             this.Controls.Add(this.emailMessageLabel);
             this.Controls.Add(this.emailMessageTextbox);
             this.Controls.Add(this.Subject);
@@ -197,6 +209,7 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox emailMessageTextbox;
         private System.Windows.Forms.Label emailMessageLabel;
+        private System.Windows.Forms.Button sendMailButton;
     }
 }
 
