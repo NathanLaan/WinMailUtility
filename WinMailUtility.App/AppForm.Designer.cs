@@ -37,8 +37,8 @@
             this.sourceEmailTextbox = new System.Windows.Forms.TextBox();
             this.destinationEmailLabel = new System.Windows.Forms.Label();
             this.destinationEmailTextbox = new System.Windows.Forms.TextBox();
-            this.Subject = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.emailSubjectLabel = new System.Windows.Forms.Label();
+            this.emailSubjectTextBox = new System.Windows.Forms.TextBox();
             this.emailMessageTextbox = new System.Windows.Forms.TextBox();
             this.emailMessageLabel = new System.Windows.Forms.Label();
             this.sendMailButton = new System.Windows.Forms.Button();
@@ -118,23 +118,23 @@
             this.destinationEmailTextbox.Size = new System.Drawing.Size(346, 20);
             this.destinationEmailTextbox.TabIndex = 6;
             // 
-            // Subject
+            // emailSubjectLabel
             // 
-            this.Subject.AutoSize = true;
-            this.Subject.Location = new System.Drawing.Point(12, 120);
-            this.Subject.Name = "Subject";
-            this.Subject.Size = new System.Drawing.Size(71, 13);
-            this.Subject.TabIndex = 9;
-            this.Subject.Text = "Email Subject";
+            this.emailSubjectLabel.AutoSize = true;
+            this.emailSubjectLabel.Location = new System.Drawing.Point(12, 120);
+            this.emailSubjectLabel.Name = "emailSubjectLabel";
+            this.emailSubjectLabel.Size = new System.Drawing.Size(71, 13);
+            this.emailSubjectLabel.TabIndex = 9;
+            this.emailSubjectLabel.Text = "Email Subject";
             // 
-            // textBox1
+            // emailSubjectTextBox
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+            this.emailSubjectTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Location = new System.Drawing.Point(114, 117);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(346, 20);
-            this.textBox1.TabIndex = 8;
+            this.emailSubjectTextBox.Location = new System.Drawing.Point(114, 117);
+            this.emailSubjectTextBox.Name = "emailSubjectTextBox";
+            this.emailSubjectTextBox.Size = new System.Drawing.Size(346, 20);
+            this.emailSubjectTextBox.TabIndex = 8;
             // 
             // emailMessageTextbox
             // 
@@ -165,6 +165,7 @@
             this.sendMailButton.TabIndex = 12;
             this.sendMailButton.Text = "Send Email";
             this.sendMailButton.UseVisualStyleBackColor = true;
+            this.sendMailButton.Click += new System.EventHandler(this.sendMailButton_Click);
             // 
             // AppForm
             // 
@@ -174,8 +175,8 @@
             this.Controls.Add(this.sendMailButton);
             this.Controls.Add(this.emailMessageLabel);
             this.Controls.Add(this.emailMessageTextbox);
-            this.Controls.Add(this.Subject);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.emailSubjectLabel);
+            this.Controls.Add(this.emailSubjectTextBox);
             this.Controls.Add(this.destinationEmailLabel);
             this.Controls.Add(this.destinationEmailTextbox);
             this.Controls.Add(this.sourceEmailLabel);
@@ -205,8 +206,8 @@
         private System.Windows.Forms.TextBox sourceEmailTextbox;
         private System.Windows.Forms.Label destinationEmailLabel;
         private System.Windows.Forms.TextBox destinationEmailTextbox;
-        private System.Windows.Forms.Label Subject;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label emailSubjectLabel;
+        private System.Windows.Forms.TextBox emailSubjectTextBox;
         private System.Windows.Forms.TextBox emailMessageTextbox;
         private System.Windows.Forms.Label emailMessageLabel;
         private System.Windows.Forms.Button sendMailButton;
